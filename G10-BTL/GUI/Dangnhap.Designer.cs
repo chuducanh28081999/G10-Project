@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pass = new System.Windows.Forms.TextBox();
-            this.name = new System.Windows.Forms.TextBox();
+            this.txtpasswold = new System.Windows.Forms.TextBox();
+            this.txtname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnDangnhap = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // pass
+            // txtpasswold
             // 
-            this.pass.Location = new System.Drawing.Point(174, 130);
-            this.pass.Name = "pass";
-            this.pass.Size = new System.Drawing.Size(204, 20);
-            this.pass.TabIndex = 3;
+            this.txtpasswold.Location = new System.Drawing.Point(174, 130);
+            this.txtpasswold.Name = "txtpasswold";
+            this.txtpasswold.Size = new System.Drawing.Size(204, 20);
+            this.txtpasswold.TabIndex = 3;
             // 
-            // name
+            // txtname
             // 
-            this.name.Location = new System.Drawing.Point(174, 89);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(204, 20);
-            this.name.TabIndex = 2;
+            this.txtname.Location = new System.Drawing.Point(174, 89);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(204, 20);
+            this.txtname.TabIndex = 2;
             // 
             // label2
             // 
@@ -85,27 +85,29 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Đăng Nhập";
             // 
-            // button1
+            // btnThoat
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(273, 171);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 37);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnThoat.BackColor = System.Drawing.Color.Red;
+            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Location = new System.Drawing.Point(134, 171);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(105, 37);
+            this.btnThoat.TabIndex = 3;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // button2
+            // btnDangnhap
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(150, 171);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 37);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Đăng Nhập";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnDangnhap.BackColor = System.Drawing.Color.Red;
+            this.btnDangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangnhap.Location = new System.Drawing.Point(273, 171);
+            this.btnDangnhap.Name = "btnDangnhap";
+            this.btnDangnhap.Size = new System.Drawing.Size(105, 37);
+            this.btnDangnhap.TabIndex = 4;
+            this.btnDangnhap.Text = "Đăng Nhập";
+            this.btnDangnhap.UseVisualStyleBackColor = false;
+            this.btnDangnhap.Click += new System.EventHandler(this.btnDangnhap_Click);
             // 
             // Dangnhap
             // 
@@ -113,16 +115,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::G10_BTL.Properties.Resources.login;
             this.ClientSize = new System.Drawing.Size(437, 249);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.pass);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnDangnhap);
+            this.Controls.Add(this.txtpasswold);
+            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.name);
+            this.Controls.Add(this.txtname);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "Dangnhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dangnhap";
+            this.Text = "Đăng nhập vào hệ thống";
             this.Load += new System.EventHandler(this.Dangnhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -131,12 +133,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox pass;
-        private System.Windows.Forms.TextBox name;
+        private System.Windows.Forms.TextBox txtpasswold;
+        private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnDangnhap;
     }
 }
