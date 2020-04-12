@@ -73,23 +73,23 @@
     <Compile Include="GUI\Dangnhap.Designer.cs">
       <DependentUpon>Dangnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GiaoVien.cs">
+    <Compile Include="GUI\MonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\GiaoVien.Designer.cs">
-      <DependentUpon>GiaoVien.cs</DependentUpon>
+    <Compile Include="GUI\MonHoc.Designer.cs">
+      <DependentUpon>MonHoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\HocSinh.cs">
+    <Compile Include="GUI\Lop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\HocSinh.Designer.cs">
-      <DependentUpon>HocSinh.cs</DependentUpon>
+    <Compile Include="GUI\Lop.Designer.cs">
+      <DependentUpon>Lop.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Nhapdiem.cs">
+    <Compile Include="GUI\DoiMK.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Nhapdiem.Designer.cs">
-      <DependentUpon>Nhapdiem.cs</DependentUpon>
+    <Compile Include="GUI\DoiMK.Designer.cs">
+      <DependentUpon>DoiMK.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\QuanLy.cs">
       <SubType>Form</SubType>
@@ -115,11 +115,11 @@
     <Compile Include="GUI\QuanlyHocSinh.Designer.cs">
       <DependentUpon>QuanlyHocSinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ĐiểmTK.cs">
+    <Compile Include="GUI\KQHocTap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\ĐiểmTK.Designer.cs">
-      <DependentUpon>ĐiểmTK.cs</DependentUpon>
+    <Compile Include="GUI\KQHocTap.Designer.cs">
+      <DependentUpon>KQHocTap.cs</DependentUpon>
     </Compile>
     <Compile Include="HocKy.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -168,14 +168,14 @@
     <EmbeddedResource Include="GUI\Dangnhap.resx">
       <DependentUpon>Dangnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GiaoVien.resx">
-      <DependentUpon>GiaoVien.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\MonHoc.resx">
+      <DependentUpon>MonHoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\HocSinh.resx">
-      <DependentUpon>HocSinh.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Lop.resx">
+      <DependentUpon>Lop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Nhapdiem.resx">
-      <DependentUpon>Nhapdiem.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\DoiMK.resx">
+      <DependentUpon>DoiMK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLy.resx">
       <DependentUpon>QuanLy.cs</DependentUpon>
@@ -189,8 +189,8 @@
     <EmbeddedResource Include="GUI\QuanlyHocSinh.resx">
       <DependentUpon>QuanlyHocSinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\ĐiểmTK.resx">
-      <DependentUpon>ĐiểmTK.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\KQHocTap.resx">
+      <DependentUpon>KQHocTap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -240,6 +240,16 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Picture\Cup.png" />
+    <None Include="Picture\confirm.png" />
+    <None Include="Picture\background.jpg" />
+    <None Include="Picture\school.jpg" />
+    <None Include="Picture\back.jpg" />
+    <None Include="Picture\subject.png" />
+    <None Include="Picture\teacher.jpg" />
+    <None Include="Picture\class.png" />
+    <None Include="Picture\student2.jpg" />
+    <None Include="Picture\student.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

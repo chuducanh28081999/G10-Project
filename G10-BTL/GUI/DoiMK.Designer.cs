@@ -1,6 +1,6 @@
 ﻿namespace G10_BTL.GUI
 {
-    partial class Nhapdiem
+    partial class DoiMK
     {
         /// <summary>
         /// Required designer variable.
@@ -250,6 +250,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Nhapdiem";
             this.Text = "Nhapdiem";
+            this.Load += new System.EventHandler(this.Nhapdiem_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

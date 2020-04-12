@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace G10_BTL.GUI
 {
-    public partial class Nhapdiem : Form
+    public partial class NguoiDung : Form
     {
-        public Nhapdiem()
+        public NguoiDung()
         {
             InitializeComponent();
         }

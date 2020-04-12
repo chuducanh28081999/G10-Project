@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace G10_BTL.GUI
 {
-    public partial class HocSinh : Form
+    public partial class MonHoc : Form
     {
-        public HocSinh()
+        public MonHoc()
         {
             InitializeComponent();
+        }
+
+        private void GiaoVien_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace G10_BTL.GUI
 {
-    public partial class QuanLy : Form
+    public partial class Lop : Form
     {
-        public QuanLy()
+        public Lop()
         {
             InitializeComponent();
         }
 
-        private void QuanLy_Load(object sender, EventArgs e)
-        {
-            label1.BackColor = Color.Transparent;
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void HocSinh_Load(object sender, EventArgs e)
         {
 
         }

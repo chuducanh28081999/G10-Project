@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace G10_BTL.GUI
 {
-    public partial class GiaoVien : Form
+    public partial class DoiMK : Form
     {
-        public GiaoVien()
+        public DoiMK()
         {
             InitializeComponent();
+        }
+
+        private void Nhapdiem_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

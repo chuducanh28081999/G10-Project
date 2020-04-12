@@ -1,6 +1,6 @@
 ﻿namespace G10_BTL.GUI
 {
-    partial class ĐiểmTK
+    partial class NguoiDung
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // ĐiểmTK
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 391);
-            this.Name = "ĐiểmTK";
-            this.Text = "ĐiểmTK";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "NguoiDung";
         }
 
         #endregion

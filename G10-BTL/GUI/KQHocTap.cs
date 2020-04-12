@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace G10_BTL.GUI
 {
-    public partial class ĐiểmTK : Form
+    public partial class KQHocTap : Form
     {
-        public ĐiểmTK()
+        public KQHocTap()
         {
             InitializeComponent();
         }
