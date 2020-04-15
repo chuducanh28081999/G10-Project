@@ -25,14 +25,10 @@ C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\bin\Debug\EntityFrame
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10-BTL.csprojAssemblyReference.cache
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.Dangnhap.resources
-C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.GiaoVien.resources
-C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.HocSinh.resources
-C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.Nhapdiem.resources
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.QuanLy.resources
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.QuanlyDiem.resources
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.QuanlyGiaoVien.resources
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.QuanlyHocSinh.resources
-C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.ĐiểmTK.resources
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.Properties.Resources.resources
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10-BTL.csproj.GenerateResource.cache
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10-BTL.csproj.CopyComplete
@@ -61,3 +57,7 @@ C:\Users\DucAnh99\Desktop\BTL2\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.MonHoc.
 C:\Users\DucAnh99\Desktop\BTL2\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.Lop.resources
 C:\Users\DucAnh99\Desktop\BTL2\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.DoiMK.resources
 C:\Users\DucAnh99\Desktop\BTL2\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.KQHocTap.resources
+C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.MonHoc.resources
+C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.Lop.resources
+C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.DoiMK.resources
+C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.KQHocTap.resources

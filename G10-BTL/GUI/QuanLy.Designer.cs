@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Mark = new System.Windows.Forms.Button();
-            this.Student = new System.Windows.Forms.Button();
             this.quảnLýHọcSinhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýGiáoViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýLớpHọcNhậpĐiểmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mônHọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kếtQuảHọcTậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Mark = new System.Windows.Forms.Button();
+            this.Student = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.trangChuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -52,6 +53,7 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.trangChuToolStripMenuItem,
             this.quảnLýHọcSinhToolStripMenuItem,
             this.quảnLýGiáoViênToolStripMenuItem,
             this.quảnLýLớpHọcNhậpĐiểmToolStripMenuItem,
@@ -64,12 +66,54 @@
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
+            // quảnLýHọcSinhToolStripMenuItem
+            // 
+            this.quảnLýHọcSinhToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quảnLýHọcSinhToolStripMenuItem.Image = global::G10_BTL.Properties.Resources.student2;
+            this.quảnLýHọcSinhToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.quảnLýHọcSinhToolStripMenuItem.Name = "quảnLýHọcSinhToolStripMenuItem";
+            this.quảnLýHọcSinhToolStripMenuItem.Size = new System.Drawing.Size(145, 24);
+            this.quảnLýHọcSinhToolStripMenuItem.Text = "Quản lý học sinh";
+            this.quảnLýHọcSinhToolStripMenuItem.Click += new System.EventHandler(this.quảnLýHọcSinhToolStripMenuItem_Click);
+            // 
+            // quảnLýGiáoViênToolStripMenuItem
+            // 
+            this.quảnLýGiáoViênToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quảnLýGiáoViênToolStripMenuItem.Image = global::G10_BTL.Properties.Resources.teacher;
+            this.quảnLýGiáoViênToolStripMenuItem.Name = "quảnLýGiáoViênToolStripMenuItem";
+            this.quảnLýGiáoViênToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.quảnLýGiáoViênToolStripMenuItem.Text = "Quản lý giáo viên";
+            // 
+            // quảnLýLớpHọcNhậpĐiểmToolStripMenuItem
+            // 
+            this.quảnLýLớpHọcNhậpĐiểmToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quảnLýLớpHọcNhậpĐiểmToolStripMenuItem.Image = global::G10_BTL.Properties.Resources._class;
+            this.quảnLýLớpHọcNhậpĐiểmToolStripMenuItem.Name = "quảnLýLớpHọcNhậpĐiểmToolStripMenuItem";
+            this.quảnLýLớpHọcNhậpĐiểmToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+            this.quảnLýLớpHọcNhậpĐiểmToolStripMenuItem.Text = "Lớp học";
+            // 
+            // mônHọcToolStripMenuItem
+            // 
+            this.mônHọcToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mônHọcToolStripMenuItem.Image = global::G10_BTL.Properties.Resources.subject;
+            this.mônHọcToolStripMenuItem.Name = "mônHọcToolStripMenuItem";
+            this.mônHọcToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
+            this.mônHọcToolStripMenuItem.Text = "Môn học";
+            // 
+            // kếtQuảHọcTậpToolStripMenuItem
+            // 
+            this.kếtQuảHọcTậpToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kếtQuảHọcTậpToolStripMenuItem.Image = global::G10_BTL.Properties.Resources.Cup;
+            this.kếtQuảHọcTậpToolStripMenuItem.Name = "kếtQuảHọcTậpToolStripMenuItem";
+            this.kếtQuảHọcTậpToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
+            this.kếtQuảHọcTậpToolStripMenuItem.Text = "Kết quả học tập";
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(0, 48);
+            this.groupBox1.Location = new System.Drawing.Point(6, 47);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(173, 148);
             this.groupBox1.TabIndex = 9;
@@ -110,31 +154,12 @@
             // 
             this.groupBox2.Controls.Add(this.Mark);
             this.groupBox2.Controls.Add(this.Student);
-            this.groupBox2.Location = new System.Drawing.Point(0, 212);
+            this.groupBox2.Location = new System.Drawing.Point(6, 212);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(173, 143);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng - Quyền hạn";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(319, 35);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(409, 28);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Quản lý điểm trường tiểu học Vĩnh Ngọc ";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::G10_BTL.Properties.Resources.background;
-            this.pictureBox1.Location = new System.Drawing.Point(202, 66);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(618, 410);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // Mark
             // 
@@ -161,46 +186,32 @@
             this.Student.Text = "Đổi mật khẩu";
             this.Student.UseVisualStyleBackColor = false;
             // 
-            // quảnLýHọcSinhToolStripMenuItem
+            // label4
             // 
-            this.quảnLýHọcSinhToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quảnLýHọcSinhToolStripMenuItem.Image = global::G10_BTL.Properties.Resources.student2;
-            this.quảnLýHọcSinhToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.quảnLýHọcSinhToolStripMenuItem.Name = "quảnLýHọcSinhToolStripMenuItem";
-            this.quảnLýHọcSinhToolStripMenuItem.Size = new System.Drawing.Size(145, 24);
-            this.quảnLýHọcSinhToolStripMenuItem.Text = "Quản lý học sinh";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(319, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(409, 28);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Quản lý điểm trường tiểu học Vĩnh Ngọc ";
             // 
-            // quảnLýGiáoViênToolStripMenuItem
+            // pictureBox1
             // 
-            this.quảnLýGiáoViênToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quảnLýGiáoViênToolStripMenuItem.Image = global::G10_BTL.Properties.Resources.teacher;
-            this.quảnLýGiáoViênToolStripMenuItem.Name = "quảnLýGiáoViênToolStripMenuItem";
-            this.quảnLýGiáoViênToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.quảnLýGiáoViênToolStripMenuItem.Text = "Quản lý giáo viên";
+            this.pictureBox1.Image = global::G10_BTL.Properties.Resources.background;
+            this.pictureBox1.Location = new System.Drawing.Point(202, 66);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(618, 410);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
-            // quảnLýLớpHọcNhậpĐiểmToolStripMenuItem
+            // trangChuToolStripMenuItem
             // 
-            this.quảnLýLớpHọcNhậpĐiểmToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quảnLýLớpHọcNhậpĐiểmToolStripMenuItem.Image = global::G10_BTL.Properties.Resources._class;
-            this.quảnLýLớpHọcNhậpĐiểmToolStripMenuItem.Name = "quảnLýLớpHọcNhậpĐiểmToolStripMenuItem";
-            this.quảnLýLớpHọcNhậpĐiểmToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
-            this.quảnLýLớpHọcNhậpĐiểmToolStripMenuItem.Text = "Lớp học";
-            // 
-            // mônHọcToolStripMenuItem
-            // 
-            this.mônHọcToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mônHọcToolStripMenuItem.Image = global::G10_BTL.Properties.Resources.subject;
-            this.mônHọcToolStripMenuItem.Name = "mônHọcToolStripMenuItem";
-            this.mônHọcToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
-            this.mônHọcToolStripMenuItem.Text = "Môn học";
-            // 
-            // kếtQuảHọcTậpToolStripMenuItem
-            // 
-            this.kếtQuảHọcTậpToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kếtQuảHọcTậpToolStripMenuItem.Image = global::G10_BTL.Properties.Resources.Cup;
-            this.kếtQuảHọcTậpToolStripMenuItem.Name = "kếtQuảHọcTậpToolStripMenuItem";
-            this.kếtQuảHọcTậpToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
-            this.kếtQuảHọcTậpToolStripMenuItem.Text = "Kết quả học tập";
+            this.trangChuToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trangChuToolStripMenuItem.Image = global::G10_BTL.Properties.Resources.background;
+            this.trangChuToolStripMenuItem.Name = "trangChuToolStripMenuItem";
+            this.trangChuToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
+            this.trangChuToolStripMenuItem.Text = "Trang Chủ";
             // 
             // QuanLy
             // 
@@ -212,8 +223,10 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "QuanLy";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanLy";
             this.Load += new System.EventHandler(this.QuanLy_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -244,5 +257,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem kếtQuảHọcTậpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem trangChuToolStripMenuItem;
     }
 }

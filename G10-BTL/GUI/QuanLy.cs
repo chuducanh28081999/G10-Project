@@ -26,5 +26,10 @@ namespace G10_BTL.GUI
         {
 
         }
+
+        private void quảnLýHọcSinhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("abc");
+        }
     }
 }
