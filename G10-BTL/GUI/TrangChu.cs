@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace G10_BTL.GUI
 {
-    public partial class QuanlyHocSinh : Form
+    public partial class TrangChu : Form
     {
-        public QuanlyHocSinh()
+        public TrangChu()
         {
             InitializeComponent();
         }
 
-        private void QuanlyHocSinh_Load(object sender, EventArgs e)
+        private void TrangChu_Load(object sender, EventArgs e)
         {
-            
+            FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
         }
     }

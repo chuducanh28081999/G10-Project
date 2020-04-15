@@ -21,5 +21,10 @@ namespace G10_BTL.GUI
         {
 
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
