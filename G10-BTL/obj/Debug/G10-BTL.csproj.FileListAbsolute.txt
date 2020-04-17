@@ -71,7 +71,6 @@ C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.Dangnhap
 C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.MonHoc.resources
 C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.Lop.resources
 C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.DoiMK.resources
-C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.QuanLy.resources
 C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.QuanlyDiem.resources
 C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.QuanlyGiaoVien.resources
 C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.QuanlyHocSinh.resources
@@ -86,3 +85,5 @@ C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.TrangChu
 C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10-BTL.csprojAssemblyReference.cache
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.TrangChu.resources
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.QuanLyAdmin.resources
+C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.TTCaNhan.resources
+C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10_BTL.QuanLyAdmin.resources

@@ -16,5 +16,10 @@ namespace G10_BTL.GUI
         {
             InitializeComponent();
         }
+
+        private void QuanlyGiaoVien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

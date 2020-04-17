@@ -40,6 +40,14 @@
             this.btnThemMoi = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvData = new System.Windows.Forms.DataGridView();
+            this.MaGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BangCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LopChuNhiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtBangCap = new System.Windows.Forms.TextBox();
@@ -60,14 +68,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtMaGV = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.MaGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BangCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LopChuNhiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
@@ -214,6 +214,59 @@
             this.dgvData.Name = "dgvData";
             this.dgvData.Size = new System.Drawing.Size(893, 263);
             this.dgvData.TabIndex = 2;
+            // 
+            // MaGV
+            // 
+            this.MaGV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MaGV.FillWeight = 80F;
+            this.MaGV.HeaderText = "Mã GV";
+            this.MaGV.Name = "MaGV";
+            // 
+            // TenGV
+            // 
+            this.TenGV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenGV.HeaderText = "Tên GV";
+            this.TenGV.Name = "TenGV";
+            // 
+            // NgaySinh
+            // 
+            this.NgaySinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NgaySinh.FillWeight = 80F;
+            this.NgaySinh.HeaderText = "Ngày sinh";
+            this.NgaySinh.Name = "NgaySinh";
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.GioiTinh.FillWeight = 75F;
+            this.GioiTinh.HeaderText = "Giới tính";
+            this.GioiTinh.Name = "GioiTinh";
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DiaChi.HeaderText = "Địa chỉ";
+            this.DiaChi.Name = "DiaChi";
+            // 
+            // SDT
+            // 
+            this.SDT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SDT.FillWeight = 90F;
+            this.SDT.HeaderText = "SDT";
+            this.SDT.Name = "SDT";
+            // 
+            // BangCap
+            // 
+            this.BangCap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.BangCap.HeaderText = "Bằng cấp";
+            this.BangCap.Name = "BangCap";
+            // 
+            // LopChuNhiem
+            // 
+            this.LopChuNhiem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.LopChuNhiem.FillWeight = 65F;
+            this.LopChuNhiem.HeaderText = "Lớp CN";
+            this.LopChuNhiem.Name = "LopChuNhiem";
             // 
             // label6
             // 
@@ -408,59 +461,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã giáo viên:";
             // 
-            // MaGV
-            // 
-            this.MaGV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaGV.FillWeight = 80F;
-            this.MaGV.HeaderText = "Mã GV";
-            this.MaGV.Name = "MaGV";
-            // 
-            // TenGV
-            // 
-            this.TenGV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenGV.HeaderText = "Tên GV";
-            this.TenGV.Name = "TenGV";
-            // 
-            // NgaySinh
-            // 
-            this.NgaySinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NgaySinh.FillWeight = 80F;
-            this.NgaySinh.HeaderText = "Ngày sinh";
-            this.NgaySinh.Name = "NgaySinh";
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.GioiTinh.FillWeight = 75F;
-            this.GioiTinh.HeaderText = "Giới tính";
-            this.GioiTinh.Name = "GioiTinh";
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DiaChi.HeaderText = "Địa chỉ";
-            this.DiaChi.Name = "DiaChi";
-            // 
-            // SDT
-            // 
-            this.SDT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SDT.FillWeight = 90F;
-            this.SDT.HeaderText = "SDT";
-            this.SDT.Name = "SDT";
-            // 
-            // BangCap
-            // 
-            this.BangCap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.BangCap.HeaderText = "Bằng cấp";
-            this.BangCap.Name = "BangCap";
-            // 
-            // LopChuNhiem
-            // 
-            this.LopChuNhiem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.LopChuNhiem.FillWeight = 65F;
-            this.LopChuNhiem.HeaderText = "Lớp CN";
-            this.LopChuNhiem.Name = "LopChuNhiem";
-            // 
             // QuanlyGiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -479,6 +479,7 @@
             this.MinimizeBox = false;
             this.Name = "QuanlyGiaoVien";
             this.Text = "Quản lý giáo viên";
+            this.Load += new System.EventHandler(this.QuanlyGiaoVien_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);

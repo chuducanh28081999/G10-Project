@@ -37,6 +37,7 @@
             this.btnQuanLyNguoiDung = new System.Windows.Forms.Button();
             this.btnDoiMatKhau = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -99,6 +100,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.btnQuanLyNguoiDung);
             this.groupBox2.Controls.Add(this.btnDoiMatKhau);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -114,7 +116,7 @@
             this.btnQuanLyNguoiDung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnQuanLyNguoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuanLyNguoiDung.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnQuanLyNguoiDung.Location = new System.Drawing.Point(18, 34);
+            this.btnQuanLyNguoiDung.Location = new System.Drawing.Point(18, 42);
             this.btnQuanLyNguoiDung.Name = "btnQuanLyNguoiDung";
             this.btnQuanLyNguoiDung.Size = new System.Drawing.Size(149, 32);
             this.btnQuanLyNguoiDung.TabIndex = 7;
@@ -125,7 +127,7 @@
             // 
             this.btnDoiMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnDoiMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoiMatKhau.Location = new System.Drawing.Point(18, 84);
+            this.btnDoiMatKhau.Location = new System.Drawing.Point(18, 80);
             this.btnDoiMatKhau.Name = "btnDoiMatKhau";
             this.btnDoiMatKhau.Size = new System.Drawing.Size(149, 32);
             this.btnDoiMatKhau.TabIndex = 6;
@@ -144,6 +146,17 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(18, 118);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(149, 32);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Thông tin cá nhân";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // TrangChu
             // 
@@ -183,5 +196,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnQuanLyNguoiDung;
         private System.Windows.Forms.Button btnDoiMatKhau;
+        private System.Windows.Forms.Button button1;
     }
 }

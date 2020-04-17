@@ -16,5 +16,10 @@ namespace G10_BTL.GUI
         {
             InitializeComponent();
         }
+
+        private void Lop_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
