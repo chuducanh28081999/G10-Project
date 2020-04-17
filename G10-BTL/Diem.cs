@@ -17,18 +17,15 @@ namespace G10_BTL
         public int MaDiem { get; set; }
         public string MaHS { get; set; }
         public Nullable<int> MaMon { get; set; }
-        public Nullable<int> MaHK { get; set; }
-        public Nullable<int> MaNH { get; set; }
         public Nullable<System.DateTime> TGNhap { get; set; }
         public Nullable<System.DateTime> TGXoa { get; set; }
         public Nullable<int> MaLoaiDiem { get; set; }
+        public Nullable<double> Diem1 { get; set; }
         public string DanhGia { get; set; }
         public Nullable<bool> Trangthai { get; set; }
     
         public virtual HocSinh HocSinh { get; set; }
-        public virtual HocKy HocKy { get; set; }
         public virtual LoaiDiem LoaiDiem { get; set; }
         public virtual Mon Mon { get; set; }
-        public virtual NamHoc NamHoc { get; set; }
     }
 }

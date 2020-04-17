@@ -26,11 +26,10 @@
           <Property Name="MaDiem" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="MaHS" Type="nvarchar" MaxLength="20" />
           <Property Name="MaMon" Type="int" />
-          <Property Name="MaHK" Type="int" />
-          <Property Name="MaNH" Type="int" />
           <Property Name="TGNhap" Type="datetime" />
           <Property Name="TGXoa" Type="datetime" />
           <Property Name="MaLoaiDiem" Type="int" />
+          <Property Name="Diem" Type="float" />
           <Property Name="DanhGia" Type="nvarchar" MaxLength="20" />
           <Property Name="Trangthai" Type="bit" />
         </EntityType>
@@ -95,6 +94,8 @@
           <Property Name="MaMon" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="MonHoc" Type="nvarchar" MaxLength="20" />
           <Property Name="GVDay" Type="int" />
+          <Property Name="MaHK" Type="int" />
+          <Property Name="MaNH" Type="int" />
         </EntityType>
         <EntityType Name="NamHoc">
           <Key>
@@ -202,12 +203,12 @@
           <End Role="HocKy" Type="Self.HocKy" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="Diem" Type="Self.Diem" Multiplicity="*" />
+          <End Role="Mon" Type="Self.Mon" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="HocKy">
               <PropertyRef Name="MaHK" />
             </Principal>
-            <Dependent Role="Diem">
+            <Dependent Role="Mon">
               <PropertyRef Name="MaHK" />
             </Dependent>
           </ReferentialConstraint>
@@ -242,12 +243,12 @@
           <End Role="NamHoc" Type="Self.NamHoc" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="Diem" Type="Self.Diem" Multiplicity="*" />
+          <End Role="Mon" Type="Self.Mon" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="NamHoc">
               <PropertyRef Name="MaNH" />
             </Principal>
-            <Dependent Role="Diem">
+            <Dependent Role="Mon">
               <PropertyRef Name="MaNH" />
             </Dependent>
           </ReferentialConstraint>
@@ -370,7 +371,7 @@
           </AssociationSet>
           <AssociationSet Name="PK_Diem_HocKy" Association="Self.PK_Diem_HocKy">
             <End Role="HocKy" EntitySet="HocKy" />
-            <End Role="Diem" EntitySet="Diem" />
+            <End Role="Mon" EntitySet="Mon" />
           </AssociationSet>
           <AssociationSet Name="PK_Diem_LoaiDiem" Association="Self.PK_Diem_LoaiDiem">
             <End Role="LoaiDiem" EntitySet="LoaiDiem" />
@@ -382,7 +383,7 @@
           </AssociationSet>
           <AssociationSet Name="PK_Diem_NamHoc" Association="Self.PK_Diem_NamHoc">
             <End Role="NamHoc" EntitySet="NamHoc" />
-            <End Role="Diem" EntitySet="Diem" />
+            <End Role="Mon" EntitySet="Mon" />
           </AssociationSet>
           <AssociationSet Name="PK_GVCN" Association="Self.PK_GVCN">
             <End Role="GiaoVien" EntitySet="GiaoVien" />
@@ -437,18 +438,15 @@
           <Property Name="MaDiem" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="MaHS" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="MaMon" Type="Int32" />
-          <Property Name="MaHK" Type="Int32" />
-          <Property Name="MaNH" Type="Int32" />
           <Property Name="TGNhap" Type="DateTime" Precision="3" />
           <Property Name="TGXoa" Type="DateTime" Precision="3" />
           <Property Name="MaLoaiDiem" Type="Int32" />
+          <Property Name="Diem1" Type="Double" />
           <Property Name="DanhGia" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="Trangthai" Type="Boolean" />
           <NavigationProperty Name="HocSinh" Relationship="Self.FK_Diem_HocSinh" FromRole="Diem" ToRole="HocSinh" />
-          <NavigationProperty Name="HocKy" Relationship="Self.PK_Diem_HocKy" FromRole="Diem" ToRole="HocKy" />
           <NavigationProperty Name="LoaiDiem" Relationship="Self.PK_Diem_LoaiDiem" FromRole="Diem" ToRole="LoaiDiem" />
           <NavigationProperty Name="Mon" Relationship="Self.PK_Diem_MonHoc" FromRole="Diem" ToRole="Mon" />
-          <NavigationProperty Name="NamHoc" Relationship="Self.PK_Diem_NamHoc" FromRole="Diem" ToRole="NamHoc" />
         </EntityType>
         <EntityType Name="GiaoVien">
           <Key>
@@ -475,7 +473,7 @@
           </Key>
           <Property Name="MaHK" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="HocKy1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Diem" Relationship="Self.PK_Diem_HocKy" FromRole="HocKy" ToRole="Diem" />
+          <NavigationProperty Name="Mon" Relationship="Self.PK_Diem_HocKy" FromRole="HocKy" ToRole="Mon" />
         </EntityType>
         <EntityType Name="HocSinh">
           <Key>
@@ -522,8 +520,12 @@
           <Property Name="MaMon" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="MonHoc" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="GVDay" Type="Int32" />
+          <Property Name="MaHK" Type="Int32" />
+          <Property Name="MaNH" Type="Int32" />
           <NavigationProperty Name="Diem" Relationship="Self.PK_Diem_MonHoc" FromRole="Mon" ToRole="Diem" />
           <NavigationProperty Name="GiaoVien" Relationship="Self.FK_Mon_GV" FromRole="Mon" ToRole="GiaoVien" />
+          <NavigationProperty Name="HocKy" Relationship="Self.PK_Diem_HocKy" FromRole="Mon" ToRole="HocKy" />
+          <NavigationProperty Name="NamHoc" Relationship="Self.PK_Diem_NamHoc" FromRole="Mon" ToRole="NamHoc" />
           <NavigationProperty Name="ThoiKhoaBieu" Relationship="Self.PK_TKB_Mon" FromRole="Mon" ToRole="ThoiKhoaBieu" />
         </EntityType>
         <EntityType Name="NamHoc">
@@ -532,7 +534,7 @@
           </Key>
           <Property Name="MaNH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="NamHoc1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Diem" Relationship="Self.PK_Diem_NamHoc" FromRole="NamHoc" ToRole="Diem" />
+          <NavigationProperty Name="Mon" Relationship="Self.PK_Diem_NamHoc" FromRole="NamHoc" ToRole="Mon" />
         </EntityType>
         <EntityType Name="NguoiDung">
           <Key>
@@ -611,20 +613,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="PK_Diem_HocKy">
-          <End Role="HocKy" Type="Self.HocKy" Multiplicity="0..1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="Diem" Type="Self.Diem" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="HocKy">
-              <PropertyRef Name="MaHK" />
-            </Principal>
-            <Dependent Role="Diem">
-              <PropertyRef Name="MaHK" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="PK_Diem_LoaiDiem">
           <End Role="LoaiDiem" Type="Self.LoaiDiem" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
@@ -648,20 +636,6 @@
             </Principal>
             <Dependent Role="Diem">
               <PropertyRef Name="MaMon" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="PK_Diem_NamHoc">
-          <End Role="NamHoc" Type="Self.NamHoc" Multiplicity="0..1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="Diem" Type="Self.Diem" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="NamHoc">
-              <PropertyRef Name="MaNH" />
-            </Principal>
-            <Dependent Role="Diem">
-              <PropertyRef Name="MaNH" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -707,6 +681,20 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="PK_Diem_HocKy">
+          <End Role="HocKy" Type="Self.HocKy" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Mon" Type="Self.Mon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HocKy">
+              <PropertyRef Name="MaHK" />
+            </Principal>
+            <Dependent Role="Mon">
+              <PropertyRef Name="MaHK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_HS_Lop">
           <End Role="Lop" Type="Self.Lop" Multiplicity="0..1" />
           <End Role="HocSinh" Type="Self.HocSinh" Multiplicity="*" />
@@ -744,6 +732,20 @@
             </Principal>
             <Dependent Role="ThoiKhoaBieu">
               <PropertyRef Name="MaLop" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PK_Diem_NamHoc">
+          <End Role="NamHoc" Type="Self.NamHoc" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Mon" Type="Self.Mon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NamHoc">
+              <PropertyRef Name="MaNH" />
+            </Principal>
+            <Dependent Role="Mon">
+              <PropertyRef Name="MaNH" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -799,20 +801,12 @@
             <End Role="HocSinh" EntitySet="HocSinh" />
             <End Role="Diem" EntitySet="Diem" />
           </AssociationSet>
-          <AssociationSet Name="PK_Diem_HocKy" Association="Self.PK_Diem_HocKy">
-            <End Role="HocKy" EntitySet="HocKy" />
-            <End Role="Diem" EntitySet="Diem" />
-          </AssociationSet>
           <AssociationSet Name="PK_Diem_LoaiDiem" Association="Self.PK_Diem_LoaiDiem">
             <End Role="LoaiDiem" EntitySet="LoaiDiem" />
             <End Role="Diem" EntitySet="Diem" />
           </AssociationSet>
           <AssociationSet Name="PK_Diem_MonHoc" Association="Self.PK_Diem_MonHoc">
             <End Role="Mon" EntitySet="Mon" />
-            <End Role="Diem" EntitySet="Diem" />
-          </AssociationSet>
-          <AssociationSet Name="PK_Diem_NamHoc" Association="Self.PK_Diem_NamHoc">
-            <End Role="NamHoc" EntitySet="NamHoc" />
             <End Role="Diem" EntitySet="Diem" />
           </AssociationSet>
           <AssociationSet Name="FK_GV_NguoiDung" Association="Self.FK_GV_NguoiDung">
@@ -827,6 +821,10 @@
             <End Role="GiaoVien" EntitySet="GiaoVien" />
             <End Role="Lop" EntitySet="Lop" />
           </AssociationSet>
+          <AssociationSet Name="PK_Diem_HocKy" Association="Self.PK_Diem_HocKy">
+            <End Role="HocKy" EntitySet="HocKy" />
+            <End Role="Mon" EntitySet="Mon" />
+          </AssociationSet>
           <AssociationSet Name="FK_HS_Lop" Association="Self.FK_HS_Lop">
             <End Role="Lop" EntitySet="Lop" />
             <End Role="HocSinh" EntitySet="HocSinh" />
@@ -838,6 +836,10 @@
           <AssociationSet Name="PK_TKB_Lop" Association="Self.PK_TKB_Lop">
             <End Role="Lop" EntitySet="Lop" />
             <End Role="ThoiKhoaBieu" EntitySet="ThoiKhoaBieu" />
+          </AssociationSet>
+          <AssociationSet Name="PK_Diem_NamHoc" Association="Self.PK_Diem_NamHoc">
+            <End Role="NamHoc" EntitySet="NamHoc" />
+            <End Role="Mon" EntitySet="Mon" />
           </AssociationSet>
           <AssociationSet Name="PK_TKB_Mon" Association="Self.PK_TKB_Mon">
             <End Role="Mon" EntitySet="Mon" />
@@ -876,11 +878,10 @@
                 <ScalarProperty Name="MaDiem" ColumnName="MaDiem" />
                 <ScalarProperty Name="MaHS" ColumnName="MaHS" />
                 <ScalarProperty Name="MaMon" ColumnName="MaMon" />
-                <ScalarProperty Name="MaHK" ColumnName="MaHK" />
-                <ScalarProperty Name="MaNH" ColumnName="MaNH" />
                 <ScalarProperty Name="TGNhap" ColumnName="TGNhap" />
                 <ScalarProperty Name="TGXoa" ColumnName="TGXoa" />
                 <ScalarProperty Name="MaLoaiDiem" ColumnName="MaLoaiDiem" />
+                <ScalarProperty Name="Diem1" ColumnName="Diem" />
                 <ScalarProperty Name="DanhGia" ColumnName="DanhGia" />
                 <ScalarProperty Name="Trangthai" ColumnName="Trangthai" />
               </MappingFragment>
@@ -951,6 +952,8 @@
                 <ScalarProperty Name="MaMon" ColumnName="MaMon" />
                 <ScalarProperty Name="MonHoc" ColumnName="MonHoc" />
                 <ScalarProperty Name="GVDay" ColumnName="GVDay" />
+                <ScalarProperty Name="MaHK" ColumnName="MaHK" />
+                <ScalarProperty Name="MaNH" ColumnName="MaNH" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

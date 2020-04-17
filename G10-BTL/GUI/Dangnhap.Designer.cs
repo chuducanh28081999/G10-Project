@@ -41,6 +41,7 @@
             // 
             this.txtpasswold.Location = new System.Drawing.Point(174, 130);
             this.txtpasswold.Name = "txtpasswold";
+            this.txtpasswold.PasswordChar = '*';
             this.txtpasswold.Size = new System.Drawing.Size(204, 20);
             this.txtpasswold.TabIndex = 3;
             // 
@@ -114,7 +115,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::G10_BTL.Properties.Resources.login;
-            this.ClientSize = new System.Drawing.Size(437, 249);
+            this.ClientSize = new System.Drawing.Size(434, 241);
             this.Controls.Add(this.btnDangnhap);
             this.Controls.Add(this.txtpasswold);
             this.Controls.Add(this.btnThoat);
@@ -122,6 +123,8 @@
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(450, 280);
+            this.MinimumSize = new System.Drawing.Size(450, 280);
             this.Name = "Dangnhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập vào hệ thống";

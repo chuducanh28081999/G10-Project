@@ -16,10 +16,5 @@ namespace G10_BTL.GUI
         {
             InitializeComponent();
         }
-
-        private void HocSinh_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

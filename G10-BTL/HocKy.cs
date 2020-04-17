@@ -17,13 +17,13 @@ namespace G10_BTL
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public HocKy()
         {
-            this.Diem = new HashSet<Diem>();
+            this.Mon = new HashSet<Mon>();
         }
     
         public int MaHK { get; set; }
         public string HocKy1 { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Diem> Diem { get; set; }
+        public virtual ICollection<Mon> Mon { get; set; }
     }
 }

@@ -30,12 +30,12 @@
         {
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbChucVu = new System.Windows.Forms.Label();
+            this.lbTenNguoiDung = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.Mark = new System.Windows.Forms.Button();
-            this.Student = new System.Windows.Forms.Button();
+            this.btnQuanLyNguoiDung = new System.Windows.Forms.Button();
+            this.btnDoiMatKhau = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -56,8 +56,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.lbChucVu);
+            this.groupBox1.Controls.Add(this.lbTenNguoiDung);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(48, 36);
@@ -67,25 +67,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin người dùng";
             // 
-            // label3
+            // lbChucVu
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(15, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 16);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Admin";
+            this.lbChucVu.AutoSize = true;
+            this.lbChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbChucVu.Location = new System.Drawing.Point(15, 102);
+            this.lbChucVu.Name = "lbChucVu";
+            this.lbChucVu.Size = new System.Drawing.Size(46, 16);
+            this.lbChucVu.TabIndex = 12;
+            this.lbChucVu.Text = "Admin";
             // 
-            // label2
+            // lbTenNguoiDung
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 16);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Chu Duc Anh";
+            this.lbTenNguoiDung.AutoSize = true;
+            this.lbTenNguoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenNguoiDung.Location = new System.Drawing.Point(15, 66);
+            this.lbTenNguoiDung.Name = "lbTenNguoiDung";
+            this.lbTenNguoiDung.Size = new System.Drawing.Size(84, 16);
+            this.lbTenNguoiDung.TabIndex = 11;
+            this.lbTenNguoiDung.Text = "Chu Duc Anh";
             // 
             // label1
             // 
@@ -99,8 +99,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.Mark);
-            this.groupBox2.Controls.Add(this.Student);
+            this.groupBox2.Controls.Add(this.btnQuanLyNguoiDung);
+            this.groupBox2.Controls.Add(this.btnDoiMatKhau);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(48, 214);
             this.groupBox2.Name = "groupBox2";
@@ -109,28 +109,28 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng - Quyền hạn";
             // 
-            // Mark
+            // btnQuanLyNguoiDung
             // 
-            this.Mark.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Mark.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mark.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Mark.Location = new System.Drawing.Point(18, 34);
-            this.Mark.Name = "Mark";
-            this.Mark.Size = new System.Drawing.Size(149, 32);
-            this.Mark.TabIndex = 7;
-            this.Mark.Text = "Quản lý người dùng";
-            this.Mark.UseVisualStyleBackColor = false;
+            this.btnQuanLyNguoiDung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnQuanLyNguoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLyNguoiDung.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnQuanLyNguoiDung.Location = new System.Drawing.Point(18, 34);
+            this.btnQuanLyNguoiDung.Name = "btnQuanLyNguoiDung";
+            this.btnQuanLyNguoiDung.Size = new System.Drawing.Size(149, 32);
+            this.btnQuanLyNguoiDung.TabIndex = 7;
+            this.btnQuanLyNguoiDung.Text = "Quản lý người dùng";
+            this.btnQuanLyNguoiDung.UseVisualStyleBackColor = false;
             // 
-            // Student
+            // btnDoiMatKhau
             // 
-            this.Student.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Student.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Student.Location = new System.Drawing.Point(18, 84);
-            this.Student.Name = "Student";
-            this.Student.Size = new System.Drawing.Size(149, 32);
-            this.Student.TabIndex = 6;
-            this.Student.Text = "Đổi mật khẩu";
-            this.Student.UseVisualStyleBackColor = false;
+            this.btnDoiMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnDoiMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoiMatKhau.Location = new System.Drawing.Point(18, 84);
+            this.btnDoiMatKhau.Name = "btnDoiMatKhau";
+            this.btnDoiMatKhau.Size = new System.Drawing.Size(149, 32);
+            this.btnDoiMatKhau.TabIndex = 6;
+            this.btnDoiMatKhau.Text = "Đổi mật khẩu";
+            this.btnDoiMatKhau.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -140,7 +140,7 @@
             this.pictureBox1.Image = global::G10_BTL.Properties.Resources.background;
             this.pictureBox1.Location = new System.Drawing.Point(245, 75);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(694, 354);
+            this.pictureBox1.Size = new System.Drawing.Size(713, 354);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
@@ -150,7 +150,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(931, 450);
+            this.ClientSize = new System.Drawing.Size(950, 450);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
@@ -160,6 +160,7 @@
             this.Name = "TrangChu";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrangChu";
             this.Load += new System.EventHandler(this.TrangChu_Load);
             this.groupBox1.ResumeLayout(false);
@@ -176,11 +177,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbChucVu;
+        private System.Windows.Forms.Label lbTenNguoiDung;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button Mark;
-        private System.Windows.Forms.Button Student;
+        private System.Windows.Forms.Button btnQuanLyNguoiDung;
+        private System.Windows.Forms.Button btnDoiMatKhau;
     }
 }

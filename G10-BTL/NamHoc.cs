@@ -17,13 +17,13 @@ namespace G10_BTL
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public NamHoc()
         {
-            this.Diem = new HashSet<Diem>();
+            this.Mon = new HashSet<Mon>();
         }
     
         public int MaNH { get; set; }
         public string NamHoc1 { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Diem> Diem { get; set; }
+        public virtual ICollection<Mon> Mon { get; set; }
     }
 }

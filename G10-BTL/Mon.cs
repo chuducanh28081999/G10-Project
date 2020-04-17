@@ -24,10 +24,14 @@ namespace G10_BTL
         public int MaMon { get; set; }
         public string MonHoc { get; set; }
         public Nullable<int> GVDay { get; set; }
+        public Nullable<int> MaHK { get; set; }
+        public Nullable<int> MaNH { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Diem> Diem { get; set; }
         public virtual GiaoVien GiaoVien { get; set; }
+        public virtual HocKy HocKy { get; set; }
+        public virtual NamHoc NamHoc { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ThoiKhoaBieu> ThoiKhoaBieu { get; set; }
     }

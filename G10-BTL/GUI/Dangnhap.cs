@@ -23,6 +23,8 @@ namespace G10_BTL.GUI
             label1.BackColor = Color.Transparent;
             label2.BackColor = Color.Transparent;
             label3.BackColor = Color.Transparent;
+            txtname.Text = "admin";
+            txtpasswold.Text = "admin123";
         }
 
         private void btnDangnhap_Click(object sender, EventArgs e)
@@ -38,7 +40,7 @@ namespace G10_BTL.GUI
                 ChucVu cv = db.ChucVu.Where(m => m.MaChucVu == nd.MaChucVu).SingleOrDefault();
                 if(cv.ChucVu1 == "admin")
                 {
-                    QuanLy ql = new QuanLy();
+                    QuanLyAdmin ql = new QuanLyAdmin();
                     this.Hide();
                     ql.ShowDialog();
                     this.Show();

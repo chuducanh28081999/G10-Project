@@ -25,7 +25,6 @@ C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\bin\Debug\EntityFrame
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10-BTL.csprojAssemblyReference.cache
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.Dangnhap.resources
-C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.QuanLy.resources
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.QuanlyDiem.resources
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.QuanlyGiaoVien.resources
 C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.QuanlyHocSinh.resources
@@ -85,3 +84,5 @@ C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10-BTL.exe
 C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10-BTL.pdb
 C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.TrangChu.resources
 C:\Users\DucAnh99\Desktop\BTL\G10-Project\G10-BTL\obj\Debug\G10-BTL.csprojAssemblyReference.cache
+C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.GUI.TrangChu.resources
+C:\Users\phung\Desktop\BTLThucTap\Code\G10-Project\G10-BTL\obj\Debug\G10_BTL.QuanLyAdmin.resources
