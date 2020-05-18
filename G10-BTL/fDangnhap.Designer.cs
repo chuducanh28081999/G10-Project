@@ -1,6 +1,6 @@
 ﻿namespace G10_BTL.GUI
 {
-    partial class Dangnhap
+    partial class fDangnhap
     {
         /// <summary>
         /// Required designer variable.

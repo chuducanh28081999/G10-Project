@@ -10,20 +10,20 @@ using System.Windows.Forms;
 
 namespace G10_BTL.GUI
 {
-    public partial class QuanlyDiem : Form
+    public partial class fQuanlyDiem : Form
     {
-        public QuanlyDiem()
+        
+
+        public fQuanlyDiem()
         {
             InitializeComponent();
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
+            
         }
 
         private void QuanlyDiem_Load(object sender, EventArgs e)
         {
+            dgvData.Rows.Clear();
+
 
         }
     }

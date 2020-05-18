@@ -1,6 +1,6 @@
 ﻿namespace G10_BTL.GUI
 {
-    partial class DoiMK
+    partial class fDoiMK
     {
         /// <summary>
         /// Required designer variable.
@@ -72,6 +72,7 @@
             // 
             this.txtMatKhauCu.Location = new System.Drawing.Point(182, 14);
             this.txtMatKhauCu.Name = "txtMatKhauCu";
+            this.txtMatKhauCu.PasswordChar = '*';
             this.txtMatKhauCu.Size = new System.Drawing.Size(159, 20);
             this.txtMatKhauCu.TabIndex = 4;
             // 
@@ -79,6 +80,7 @@
             // 
             this.txtMatKhauMoi.Location = new System.Drawing.Point(182, 47);
             this.txtMatKhauMoi.Name = "txtMatKhauMoi";
+            this.txtMatKhauMoi.PasswordChar = '*';
             this.txtMatKhauMoi.Size = new System.Drawing.Size(159, 20);
             this.txtMatKhauMoi.TabIndex = 5;
             // 
@@ -86,6 +88,7 @@
             // 
             this.txtNhapLaiMKMoi.Location = new System.Drawing.Point(182, 84);
             this.txtNhapLaiMKMoi.Name = "txtNhapLaiMKMoi";
+            this.txtNhapLaiMKMoi.PasswordChar = '*';
             this.txtNhapLaiMKMoi.Size = new System.Drawing.Size(159, 20);
             this.txtNhapLaiMKMoi.TabIndex = 6;
             // 
@@ -93,23 +96,25 @@
             // 
             this.btnXaxNhan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnXaxNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXaxNhan.Location = new System.Drawing.Point(121, 123);
+            this.btnXaxNhan.Location = new System.Drawing.Point(221, 123);
             this.btnXaxNhan.Name = "btnXaxNhan";
             this.btnXaxNhan.Size = new System.Drawing.Size(87, 23);
             this.btnXaxNhan.TabIndex = 7;
             this.btnXaxNhan.Text = "Xác nhận";
             this.btnXaxNhan.UseVisualStyleBackColor = false;
+            this.btnXaxNhan.Click += new System.EventHandler(this.btnXaxNhan_Click);
             // 
             // btnThoat
             // 
             this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(231, 123);
+            this.btnThoat.Location = new System.Drawing.Point(118, 123);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(74, 23);
             this.btnThoat.TabIndex = 8;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // DoiMK
             // 

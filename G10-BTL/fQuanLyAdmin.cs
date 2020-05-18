@@ -17,18 +17,32 @@ namespace G10_BTL
             InitializeComponent();
         }
 
+        QuanLyTruongHocEntities db = new QuanLyTruongHocEntities();
+        HocSinh hs = new HocSinh();
+        GiaoVien gv = new GiaoVien();
+
         private void trangChuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
             this.InitializeComponent();
-            GUI.TrangChu hs = new GUI.TrangChu();
-            hs.MdiParent = this;
+            GUI.fTrangChu fhs = new GUI.fTrangChu();
+            fhs.MdiParent = this;
             //hs.StartPosition = FormStartPosition.CenterParent;
-            hs.Show();
+            if (hs != null)
+            {
+                fhs.Tag = hs;
+            }
+            else
+            {
+                fhs.Tag = gv;
+            }
+            fhs.Show();
         }
 
         private void QuanLyAdmin_Load(object sender, EventArgs e)
         {
+            hs = this.Tag as HocSinh;
+            gv = this.Tag as GiaoVien;
             trangChuToolStripMenuItem_Click(sender, e);
         }
 
@@ -36,7 +50,7 @@ namespace G10_BTL
         {
             this.Controls.Clear();
             this.InitializeComponent();
-            GUI.QuanlyHocSinh hs = new GUI.QuanlyHocSinh();
+            GUI.fQuanlyHocSinh hs = new GUI.fQuanlyHocSinh();
             hs.MdiParent = this;
             //hs.StartPosition = FormStartPosition.CenterParent;
             hs.Show();
@@ -46,7 +60,7 @@ namespace G10_BTL
         {
             this.Controls.Clear();
             this.InitializeComponent();
-            GUI.QuanlyGiaoVien hs = new GUI.QuanlyGiaoVien();
+            GUI.fQuanlyGiaoVien hs = new GUI.fQuanlyGiaoVien();
             hs.MdiParent = this;
             //hs.StartPosition = FormStartPosition.CenterParent;
             hs.Show();
@@ -56,7 +70,7 @@ namespace G10_BTL
         {
             this.Controls.Clear();
             this.InitializeComponent();
-            GUI.Lop hs = new GUI.Lop();
+            GUI.fLop hs = new GUI.fLop();
             hs.MdiParent = this;
             //hs.StartPosition = FormStartPosition.CenterParent;
             hs.Show();
@@ -66,7 +80,7 @@ namespace G10_BTL
         {
             this.Controls.Clear();
             this.InitializeComponent();
-            GUI.MonHoc hs = new GUI.MonHoc();
+            GUI.fMonHoc hs = new GUI.fMonHoc();
             hs.MdiParent = this;
             //hs.StartPosition = FormStartPosition.CenterParent;
             hs.Show();
@@ -76,7 +90,7 @@ namespace G10_BTL
         {
             this.Controls.Clear();
             this.InitializeComponent();
-            GUI.KQHocTap hs = new GUI.KQHocTap();
+            GUI.fKQHocTap hs = new GUI.fKQHocTap();
             hs.MdiParent = this;
             //hs.StartPosition = FormStartPosition.CenterParent;
             hs.Show();
@@ -89,6 +103,24 @@ namespace G10_BTL
             {
                 this.Close();
             }
+        }
+
+        private void quảnLýĐiểmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            this.InitializeComponent();
+            GUI.fQuanlyDiem d = new GUI.fQuanlyDiem();
+            d.MdiParent = this;
+            //hs.StartPosition = FormStartPosition.CenterParent;
+            if (hs != null)
+            {
+                d.Tag = hs;
+            }
+            else
+            {
+                d.Tag = gv;
+            }
+            d.Show();
         }
     }
 }

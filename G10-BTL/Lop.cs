@@ -18,17 +18,19 @@ namespace G10_BTL
         public Lop()
         {
             this.HocSinh = new HashSet<HocSinh>();
-            this.ThoiKhoaBieu = new HashSet<ThoiKhoaBieu>();
+            this.Mon = new HashSet<Mon>();
         }
     
-        public int MaLop { get; set; }
-        public Nullable<int> MaGVCN { get; set; }
-        public string TenLop { get; set; }
+        public int maLop { get; set; }
+        public string tenLop { get; set; }
+        public Nullable<int> maGVCN { get; set; }
+        public Nullable<System.DateTime> nam { get; set; }
+        public Nullable<bool> trangThai { get; set; }
     
         public virtual GiaoVien GiaoVien { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HocSinh> HocSinh { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ThoiKhoaBieu> ThoiKhoaBieu { get; set; }
+        public virtual ICollection<Mon> Mon { get; set; }
     }
 }

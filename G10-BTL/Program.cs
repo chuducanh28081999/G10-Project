@@ -16,7 +16,7 @@ namespace G10_BTL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI.Dangnhap());
+            Application.Run(new GUI.fDangnhap());
         }
     }
 }

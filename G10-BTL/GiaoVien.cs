@@ -17,26 +17,26 @@ namespace G10_BTL
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public GiaoVien()
         {
-            this.Mon = new HashSet<Mon>();
             this.Lop = new HashSet<Lop>();
+            this.Mon = new HashSet<Mon>();
         }
     
-        public Nullable<int> MaND { get; set; }
-        public int MaGV { get; set; }
-        public string Ten { get; set; }
-        public string Gioitinh { get; set; }
-        public Nullable<System.DateTime> NgaySinh { get; set; }
-        public string DiaChi { get; set; }
-        public Nullable<int> SoDT { get; set; }
-        public string BangCap { get; set; }
-        public Nullable<System.DateTime> TGBatDau { get; set; }
-        public Nullable<System.DateTime> TGKetThuc { get; set; }
-        public Nullable<bool> Trangthai { get; set; }
+        public int maGV { get; set; }
+        public string taiKhoan { get; set; }
+        public string matKhau { get; set; }
+        public string ten { get; set; }
+        public string gioiTinh { get; set; }
+        public Nullable<System.DateTime> ngaySinh { get; set; }
+        public string diaChi { get; set; }
+        public string sdt { get; set; }
+        public string bangCap { get; set; }
+        public Nullable<System.DateTime> tgBatDau { get; set; }
+        public Nullable<System.DateTime> tgKetThuc { get; set; }
+        public Nullable<bool> trangThai { get; set; }
     
-        public virtual NguoiDung NguoiDung { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Mon> Mon { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Lop> Lop { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Mon> Mon { get; set; }
     }
 }

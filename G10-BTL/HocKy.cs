@@ -20,8 +20,8 @@ namespace G10_BTL
             this.Mon = new HashSet<Mon>();
         }
     
-        public int MaHK { get; set; }
-        public string HocKy1 { get; set; }
+        public int maHK { get; set; }
+        public string tenHK { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Mon> Mon { get; set; }

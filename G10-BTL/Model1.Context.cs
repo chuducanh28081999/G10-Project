@@ -13,10 +13,10 @@ namespace G10_BTL
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QLTHEntities : DbContext
+    public partial class QuanLyTruongHocEntities : DbContext
     {
-        public QLTHEntities()
-            : base("name=QLTHEntities")
+        public QuanLyTruongHocEntities()
+            : base("name=QuanLyTruongHocEntities")
         {
         }
     
@@ -25,18 +25,11 @@ namespace G10_BTL
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Ca> Ca { get; set; }
-        public virtual DbSet<ChucVu> ChucVu { get; set; }
         public virtual DbSet<Diem> Diem { get; set; }
         public virtual DbSet<GiaoVien> GiaoVien { get; set; }
         public virtual DbSet<HocKy> HocKy { get; set; }
         public virtual DbSet<HocSinh> HocSinh { get; set; }
-        public virtual DbSet<LoaiDiem> LoaiDiem { get; set; }
         public virtual DbSet<Lop> Lop { get; set; }
         public virtual DbSet<Mon> Mon { get; set; }
-        public virtual DbSet<NamHoc> NamHoc { get; set; }
-        public virtual DbSet<NguoiDung> NguoiDung { get; set; }
-        public virtual DbSet<ThoiGianHoc> ThoiGianHoc { get; set; }
-        public virtual DbSet<ThoiKhoaBieu> ThoiKhoaBieu { get; set; }
     }
 }

@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace G10_BTL.GUI
 {
-    public partial class Dangnhap : Form
+    public partial class fDangnhap : Form
     {
-        QLTHEntities db = new QLTHEntities();
-        public Dangnhap()
+        QuanLyTruongHocEntities db = new QuanLyTruongHocEntities();
+        public fDangnhap()
         {
             InitializeComponent();
         }
@@ -29,21 +29,31 @@ namespace G10_BTL.GUI
 
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
-            NguoiDung nd = db.NguoiDung.Where(m => m.TaiKhoan == txtname.Text && m.MatKhau == txtpasswold.Text).SingleOrDefault();
-            if(nd == null)
+            GiaoVien gv = db.GiaoVien.Where(m => m.taiKhoan == txtname.Text && m.matKhau == txtpasswold.Text).SingleOrDefault();
+            HocSinh hs = db.HocSinh.Where(m => m.taiKhoan == txtname.Text && m.matKhau == txtpasswold.Text).SingleOrDefault();
+            if (gv == null && hs == null)
             {
                 MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!", "Đăng nhập không thành công", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             else
             {
-                ChucVu cv = db.ChucVu.Where(m => m.MaChucVu == nd.MaChucVu).SingleOrDefault();
-                if(cv.ChucVu1 == "admin")
+                
+                if(gv != null)
                 {
                     QuanLyAdmin ql = new QuanLyAdmin();
                     this.Hide();
+                    ql.Tag = gv;
                     ql.ShowDialog();
-                    this.Show();
+                    this.Close();
+                }
+                else
+                {
+                    QuanLyAdmin ql = new QuanLyAdmin();
+                    this.Hide();
+                    ql.Tag = hs;
+                    ql.ShowDialog();
+                    this.Close();
                 }
             }
         }

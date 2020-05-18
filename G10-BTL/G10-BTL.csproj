@@ -55,85 +55,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ca.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ChucVu.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Diem.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="fDangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDangnhap.Designer.cs">
+      <DependentUpon>fDangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMonHoc.Designer.cs">
+      <DependentUpon>fMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLop.Designer.cs">
+      <DependentUpon>fLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDoiMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDoiMK.Designer.cs">
+      <DependentUpon>fDoiMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQuanlyDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuanlyDiem.Designer.cs">
+      <DependentUpon>fQuanlyDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQuanlyGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuanlyGiaoVien.Designer.cs">
+      <DependentUpon>fQuanlyGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQuanlyHocSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuanlyHocSinh.Designer.cs">
+      <DependentUpon>fQuanlyHocSinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fKQHocTap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fKQHocTap.Designer.cs">
+      <DependentUpon>fKQHocTap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTrangChu.Designer.cs">
+      <DependentUpon>fTrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTTCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTTCaNhan.Designer.cs">
+      <DependentUpon>fTTCaNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GiaoVien.cs">
       <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Dangnhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Dangnhap.Designer.cs">
-      <DependentUpon>Dangnhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\MonHoc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\MonHoc.Designer.cs">
-      <DependentUpon>MonHoc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Lop.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Lop.Designer.cs">
-      <DependentUpon>Lop.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\DoiMK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\DoiMK.Designer.cs">
-      <DependentUpon>DoiMK.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\QuanlyDiem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\QuanlyDiem.Designer.cs">
-      <DependentUpon>QuanlyDiem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\QuanlyGiaoVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\QuanlyGiaoVien.Designer.cs">
-      <DependentUpon>QuanlyGiaoVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\QuanlyHocSinh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\QuanlyHocSinh.Designer.cs">
-      <DependentUpon>QuanlyHocSinh.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\KQHocTap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\KQHocTap.Designer.cs">
-      <DependentUpon>KQHocTap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\TrangChu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\TrangChu.Designer.cs">
-      <DependentUpon>TrangChu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\TTCaNhan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\TTCaNhan.Designer.cs">
-      <DependentUpon>TTCaNhan.cs</DependentUpon>
     </Compile>
     <Compile Include="HocKy.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="HocSinh.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="LoaiDiem.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Lop.cs">
@@ -157,55 +148,43 @@
     <Compile Include="Mon.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="NamHoc.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="NguoiDung.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GUI\QuanLyAdmin.cs">
+    <Compile Include="fQuanLyAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\QuanLyAdmin.Designer.cs">
-      <DependentUpon>QuanLyAdmin.cs</DependentUpon>
+    <Compile Include="fQuanLyAdmin.Designer.cs">
+      <DependentUpon>fQuanLyAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThoiGianHoc.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ThoiKhoaBieu.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="GUI\Dangnhap.resx">
-      <DependentUpon>Dangnhap.cs</DependentUpon>
+    <EmbeddedResource Include="fDangnhap.resx">
+      <DependentUpon>fDangnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\MonHoc.resx">
-      <DependentUpon>MonHoc.cs</DependentUpon>
+    <EmbeddedResource Include="fMonHoc.resx">
+      <DependentUpon>fMonHoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Lop.resx">
-      <DependentUpon>Lop.cs</DependentUpon>
+    <EmbeddedResource Include="fLop.resx">
+      <DependentUpon>fLop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\DoiMK.resx">
-      <DependentUpon>DoiMK.cs</DependentUpon>
+    <EmbeddedResource Include="fDoiMK.resx">
+      <DependentUpon>fDoiMK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QuanlyDiem.resx">
-      <DependentUpon>QuanlyDiem.cs</DependentUpon>
+    <EmbeddedResource Include="fQuanlyDiem.resx">
+      <DependentUpon>fQuanlyDiem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QuanlyGiaoVien.resx">
-      <DependentUpon>QuanlyGiaoVien.cs</DependentUpon>
+    <EmbeddedResource Include="fQuanlyGiaoVien.resx">
+      <DependentUpon>fQuanlyGiaoVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QuanlyHocSinh.resx">
-      <DependentUpon>QuanlyHocSinh.cs</DependentUpon>
+    <EmbeddedResource Include="fQuanlyHocSinh.resx">
+      <DependentUpon>fQuanlyHocSinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\KQHocTap.resx">
-      <DependentUpon>KQHocTap.cs</DependentUpon>
+    <EmbeddedResource Include="fKQHocTap.resx">
+      <DependentUpon>fKQHocTap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\TrangChu.resx">
-      <DependentUpon>TrangChu.cs</DependentUpon>
+    <EmbeddedResource Include="fTrangChu.resx">
+      <DependentUpon>fTrangChu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\TTCaNhan.resx">
-      <DependentUpon>TTCaNhan.cs</DependentUpon>
+    <EmbeddedResource Include="fTTCaNhan.resx">
+      <DependentUpon>fTTCaNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -217,8 +196,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="GUI\QuanLyAdmin.resx">
-      <DependentUpon>QuanLyAdmin.cs</DependentUpon>
+    <EmbeddedResource Include="fQuanLyAdmin.resx">
+      <DependentUpon>fQuanLyAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

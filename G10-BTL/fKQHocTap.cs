@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace G10_BTL.GUI
 {
-    public partial class QuanlyHocSinh : Form
+    public partial class fKQHocTap : Form
     {
-        public QuanlyHocSinh()
+        public fKQHocTap()
         {
             InitializeComponent();
-        }
-
-        private void QuanlyHocSinh_Load(object sender, EventArgs e)
-        {
-            
-            WindowState = FormWindowState.Maximized;
         }
     }
 }

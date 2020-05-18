@@ -1,6 +1,6 @@
 ﻿namespace G10_BTL.GUI
 {
-    partial class KQHocTap
+    partial class fKQHocTap
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvData = new System.Windows.Forms.DataGridView();
+            this.TenHocSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiemGiuaKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiemCuoiKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HocKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DanhGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbbLop = new System.Windows.Forms.ComboBox();
+            this.cbbTenHocSinh = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -58,15 +67,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.cbbTenHocSinh = new System.Windows.Forms.ComboBox();
-            this.cbbLop = new System.Windows.Forms.ComboBox();
-            this.TenHocSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiemGiuaKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiemCuoiKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HocKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DanhGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -95,8 +95,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.dgvData);
             this.groupBox1.Location = new System.Drawing.Point(12, 171);
             this.groupBox1.Name = "groupBox1";
@@ -108,8 +109,9 @@
             // dgvData
             // 
             this.dgvData.AllowUserToAddRows = false;
-            this.dgvData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.dgvData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TenHocSinh,
@@ -123,6 +125,53 @@
             this.dgvData.Name = "dgvData";
             this.dgvData.Size = new System.Drawing.Size(898, 303);
             this.dgvData.TabIndex = 0;
+            // 
+            // TenHocSinh
+            // 
+            this.TenHocSinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenHocSinh.HeaderText = "Tên học sinh";
+            this.TenHocSinh.Name = "TenHocSinh";
+            // 
+            // TenMon
+            // 
+            this.TenMon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenMon.FillWeight = 80F;
+            this.TenMon.HeaderText = "Môn";
+            this.TenMon.Name = "TenMon";
+            // 
+            // DiemGiuaKy
+            // 
+            this.DiemGiuaKy.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DiemGiuaKy.FillWeight = 80F;
+            this.DiemGiuaKy.HeaderText = "Điểm Giữa kỳ";
+            this.DiemGiuaKy.Name = "DiemGiuaKy";
+            // 
+            // DiemCuoiKy
+            // 
+            this.DiemCuoiKy.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DiemCuoiKy.FillWeight = 80F;
+            this.DiemCuoiKy.HeaderText = "Điểm cuối kỳ";
+            this.DiemCuoiKy.Name = "DiemCuoiKy";
+            // 
+            // HocKy
+            // 
+            this.HocKy.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.HocKy.FillWeight = 60F;
+            this.HocKy.HeaderText = "Học kỳ";
+            this.HocKy.Name = "HocKy";
+            // 
+            // Nam
+            // 
+            this.Nam.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Nam.FillWeight = 60F;
+            this.Nam.HeaderText = "Năm";
+            this.Nam.Name = "Nam";
+            // 
+            // DanhGia
+            // 
+            this.DanhGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DanhGia.HeaderText = "Đánh giá";
+            this.DanhGia.Name = "DanhGia";
             // 
             // groupBox2
             // 
@@ -141,6 +190,22 @@
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin học sinh:";
+            // 
+            // cbbLop
+            // 
+            this.cbbLop.FormattingEnabled = true;
+            this.cbbLop.Location = new System.Drawing.Point(104, 62);
+            this.cbbLop.Name = "cbbLop";
+            this.cbbLop.Size = new System.Drawing.Size(170, 24);
+            this.cbbLop.TabIndex = 11;
+            // 
+            // cbbTenHocSinh
+            // 
+            this.cbbTenHocSinh.FormattingEnabled = true;
+            this.cbbTenHocSinh.Location = new System.Drawing.Point(104, 29);
+            this.cbbTenHocSinh.Name = "cbbTenHocSinh";
+            this.cbbTenHocSinh.Size = new System.Drawing.Size(170, 24);
+            this.cbbTenHocSinh.TabIndex = 10;
             // 
             // comboBox2
             // 
@@ -418,70 +483,7 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "Học kỳ:";
             // 
-            // cbbTenHocSinh
-            // 
-            this.cbbTenHocSinh.FormattingEnabled = true;
-            this.cbbTenHocSinh.Location = new System.Drawing.Point(104, 29);
-            this.cbbTenHocSinh.Name = "cbbTenHocSinh";
-            this.cbbTenHocSinh.Size = new System.Drawing.Size(170, 24);
-            this.cbbTenHocSinh.TabIndex = 10;
-            // 
-            // cbbLop
-            // 
-            this.cbbLop.FormattingEnabled = true;
-            this.cbbLop.Location = new System.Drawing.Point(104, 62);
-            this.cbbLop.Name = "cbbLop";
-            this.cbbLop.Size = new System.Drawing.Size(170, 24);
-            this.cbbLop.TabIndex = 11;
-            // 
-            // TenHocSinh
-            // 
-            this.TenHocSinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenHocSinh.HeaderText = "Tên học sinh";
-            this.TenHocSinh.Name = "TenHocSinh";
-            // 
-            // TenMon
-            // 
-            this.TenMon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenMon.FillWeight = 80F;
-            this.TenMon.HeaderText = "Môn";
-            this.TenMon.Name = "TenMon";
-            // 
-            // DiemGiuaKy
-            // 
-            this.DiemGiuaKy.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DiemGiuaKy.FillWeight = 80F;
-            this.DiemGiuaKy.HeaderText = "Điểm Giữa kỳ";
-            this.DiemGiuaKy.Name = "DiemGiuaKy";
-            // 
-            // DiemCuoiKy
-            // 
-            this.DiemCuoiKy.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DiemCuoiKy.FillWeight = 80F;
-            this.DiemCuoiKy.HeaderText = "Điểm cuối kỳ";
-            this.DiemCuoiKy.Name = "DiemCuoiKy";
-            // 
-            // HocKy
-            // 
-            this.HocKy.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.HocKy.FillWeight = 60F;
-            this.HocKy.HeaderText = "Học kỳ";
-            this.HocKy.Name = "HocKy";
-            // 
-            // Nam
-            // 
-            this.Nam.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Nam.FillWeight = 60F;
-            this.Nam.HeaderText = "Năm";
-            this.Nam.Name = "Nam";
-            // 
-            // DanhGia
-            // 
-            this.DanhGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DanhGia.HeaderText = "Đánh giá";
-            this.DanhGia.Name = "DanhGia";
-            // 
-            // KQHocTap
+            // fKQHocTap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -495,7 +497,7 @@
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "KQHocTap";
+            this.Name = "fKQHocTap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kết quả học tập";
             this.groupBox1.ResumeLayout(false);

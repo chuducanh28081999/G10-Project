@@ -20,21 +20,21 @@ namespace G10_BTL
             this.Diem = new HashSet<Diem>();
         }
     
-        public string MaHS { get; set; }
-        public Nullable<int> MaND { get; set; }
-        public Nullable<int> MaLop { get; set; }
-        public string Ten { get; set; }
-        public string Gioitinh { get; set; }
-        public Nullable<System.DateTime> NgaySinh { get; set; }
-        public string DiaChi { get; set; }
-        public Nullable<int> SoDT { get; set; }
-        public Nullable<System.DateTime> TGBatDau { get; set; }
-        public Nullable<System.DateTime> TGKetThuc { get; set; }
-        public Nullable<bool> Trangthai { get; set; }
+        public int maHS { get; set; }
+        public string taiKhoan { get; set; }
+        public string matKhau { get; set; }
+        public string ten { get; set; }
+        public string gioiTinh { get; set; }
+        public Nullable<System.DateTime> ngaySinh { get; set; }
+        public string diaChi { get; set; }
+        public string sdt { get; set; }
+        public Nullable<System.DateTime> tgBatDau { get; set; }
+        public Nullable<System.DateTime> tgKetThuc { get; set; }
+        public Nullable<bool> trangThai { get; set; }
+        public Nullable<int> maLop { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Diem> Diem { get; set; }
         public virtual Lop Lop { get; set; }
-        public virtual NguoiDung NguoiDung { get; set; }
     }
 }

@@ -18,21 +18,19 @@ namespace G10_BTL
         public Mon()
         {
             this.Diem = new HashSet<Diem>();
-            this.ThoiKhoaBieu = new HashSet<ThoiKhoaBieu>();
         }
     
-        public int MaMon { get; set; }
-        public string MonHoc { get; set; }
-        public Nullable<int> GVDay { get; set; }
-        public Nullable<int> MaHK { get; set; }
-        public Nullable<int> MaNH { get; set; }
+        public int maMon { get; set; }
+        public string tenMon { get; set; }
+        public Nullable<int> gvDay { get; set; }
+        public Nullable<int> maLop { get; set; }
+        public Nullable<bool> trangThai { get; set; }
+        public Nullable<int> maHK { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Diem> Diem { get; set; }
         public virtual GiaoVien GiaoVien { get; set; }
         public virtual HocKy HocKy { get; set; }
-        public virtual NamHoc NamHoc { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ThoiKhoaBieu> ThoiKhoaBieu { get; set; }
+        public virtual Lop Lop { get; set; }
     }
 }

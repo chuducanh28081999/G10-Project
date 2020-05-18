@@ -14,18 +14,17 @@ namespace G10_BTL
     
     public partial class Diem
     {
-        public int MaDiem { get; set; }
-        public string MaHS { get; set; }
-        public Nullable<int> MaMon { get; set; }
-        public Nullable<System.DateTime> TGNhap { get; set; }
-        public Nullable<System.DateTime> TGXoa { get; set; }
-        public Nullable<int> MaLoaiDiem { get; set; }
-        public Nullable<double> Diem1 { get; set; }
-        public string DanhGia { get; set; }
-        public Nullable<bool> Trangthai { get; set; }
+        public int maDiem { get; set; }
+        public Nullable<int> maHS { get; set; }
+        public Nullable<int> maMon { get; set; }
+        public Nullable<double> diemGiuaKy { get; set; }
+        public Nullable<double> diemCuoiKy { get; set; }
+        public Nullable<System.DateTime> tgNhap { get; set; }
+        public Nullable<System.DateTime> tgXoa { get; set; }
+        public string danhGia { get; set; }
+        public Nullable<bool> trangThai { get; set; }
     
         public virtual HocSinh HocSinh { get; set; }
-        public virtual LoaiDiem LoaiDiem { get; set; }
         public virtual Mon Mon { get; set; }
     }
 }
